@@ -8,4 +8,4 @@ python3 contact_ranking_parsing.py
 ```
 4. It will generate a file named `output.csv`.
 5. You can check this csv file in excel
-(Go [herre](https://github.com/upupsheep/contact_ranking_code_parsing/blob/master/cr_parsing_excel_document.pdf) to see how to open it in excel!)
+(Go [here](https://github.com/upupsheep/contact_ranking_code_parsing/blob/master/cr_parsing_excel_document.pdf) to see how to open it in excel!)
