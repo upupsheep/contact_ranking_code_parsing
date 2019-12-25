@@ -6,9 +6,8 @@ Total 13 column:
 
 Encoding by: big5hkscs
 """
-
-in_file = open("contact_ranking.txt", "r", encoding="big5hkscs")
-out_file = open("cr_parsing.txt", "w", encoding="big5hkscs")
+filename = "contact_ranking.txt"
+in_file = open(filename, "r", encoding="big5hkscs")
 
 line = in_file.readline()
 # print(line)
@@ -39,12 +38,6 @@ while line:
         # out_file.write("\n".join(buffer))
     line = in_file.readline()
 
-# with open('cr_parsing.txt', 'w', encoding='big5hkscs') as file:
-# out_file.write(str(code_dict))  # use `json.loads` to do the reverse
-# with open("output.csv", 'w') as resultFile:
-#     wr = csv.writer(resultFile, dialect='excel')
-#     wr.writerows(code_dict)
-
 w = csv.writer(open("output.csv", "w", encoding="big5hkscs"))
 for key, val in code_dict.items():
     w.writerow([key, val])
@@ -62,4 +55,3 @@ with open("output.csv", "w", encoding="big5hkscs") as outfile:
     writer.writerows(zip(*code_dict.values()))
 '''
 in_file.close()
-out_file.close()
